@@ -6200,19 +6200,19 @@
                 }
               </style>
               <div class="preventing-data-loss-points">
-                <div class="preventing-data-loss-point point-1 active" data-src="./assets/img/file-transfer.png">
+                <div class="preventing-data-loss-point point-1 active" data-src="file-transfer.png">
                   <h3>Block File Transfers</h3>
                   <p>Stop employees from transferring data to USB, the Cloud, or Network Storage</p>
                 </div>
-                <div class="preventing-data-loss-point point-2" data-src="./assets/img/file-activity.png">
+                <div class="preventing-data-loss-point point-2" data-src="file-activity.png">
                   <h3>Application Access Restrictions</h3>
                   <p>Block specific apps from accessing specified file types. For example, ....</p>
                 </div>
-                <div class="preventing-data-loss-point point-3" data-src="./assets/img/block-device-connection.png">
+                <div class="preventing-data-loss-point point-3" data-src="block-device-connection.png">
                   <h3>Block Device Connections</h3>
                   <p>Our peripheral management feature lets you Restrict Certain Devices from Connecting to Computer</p>
                 </div>
-                <div class="preventing-data-loss-point point-4" data-src="./assets/img/periphrial-connections.png">
+                <div class="preventing-data-loss-point point-4" data-src="periphrial-connections.png">
                   <h3>Detect Malware</h3>
                   <p>Unlike other products, KnowIT also inspects network packets allowing detection of suspicious port activity, spam bots, DDOS zombies, and other hidden malware</p>
                 </div>
@@ -6228,10 +6228,8 @@
                     $(this).parent(".preventing-data-loss-point").addClass("active");
                     /* Getting src based on the active point and assigning to img */
                     src = $(this).parent(".preventing-data-loss-point").attr("data-src");
-                    $(".preventing-data-loss-image").attr("src", src);
-                    /* Getting alt based on the active point/image and assigning */
                     alt = $(this).text();
-                    $(".preventing-data-loss-image").attr("alt", alt);
+                    $(".preventing-data-loss-image").replaceWith('<img class="preventing-data-loss-image" src="./assets/img/' + src + '"  alt="./assets/img/' + alt + '" />');
                   });
                 });
               </script>
