@@ -6226,7 +6226,7 @@
                     /* Switching Classes */
                     $(".preventing-data-loss-point.active").removeClass("active");
                     $(this).parent(".preventing-data-loss-point").addClass("active");
-                    /* Getting src based on the active point and assigning to img */
+                    /* Getting src, alt based on the active point and assigning to img */
                     src = $(this).parent(".preventing-data-loss-point").attr("data-src");
                     alt = $(this).text();
                     $(".preventing-data-loss-image").replaceWith('<img class="preventing-data-loss-image" src="./assets/img/' + src + '"  alt="./assets/img/' + alt + '" />');
