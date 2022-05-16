@@ -6170,15 +6170,72 @@
         <div class="wrapper-inner make-different-inner txt-center">
           <div class="row txt-left">
             <div class="col col-2 flexcol pull-sm-left txt-center video-769 video-left">
-              <img class="preventing-data-loss-image" src="./assets/img/file-transfer.png" alt="file-transfer" />
-            </div>
-            <div class="col col-2">
-              <p>Prevent Data Loss</p>
-              <h2>Stop your company IPR from leaving your network</h2>
-              <p class="txt-medium">
-                Source code theft is an unspoken problem that is plaguing the software development industry. KnowIT offers powerful tools to stop data loss across every endpoint
-              </p>
+              <div class="preventing-data-loss-heading-area d-md-block">
+                <p>Prevent Data Loss</p>
+                <h2>Stop your company IPR from leaving your network</h2>
+                <p class="txt-medium">
+                  Source code theft is an unspoken problem that is plaguing the software development industry. KnowIT offers powerful tools to stop data loss across every endpoint
+                </p>
+              </div>
               <style>
+                /* >>> Switching Data Loss Points <<< */
+                /* >>> Visible on Mobile only <<< */
+                .switch-points {
+                  display: -webkit-box;
+                  display: -ms-flexbox;
+                  display: flex;
+                  -webkit-box-align: center;
+                  -ms-flex-align: center;
+                  align-items: center;
+                  margin-bottom: 14px;
+                }
+                .switch-points .switch-to:first-of-type {
+                  padding-right: 6px;
+                }
+                .switch-points .switch-to:last-of-type {
+                  padding-left: 6px;
+                }
+                .switch-points.d-md-flex {
+                  display: none;
+                }
+                .switch-points:last-of-type {
+                  margin-bottom: 35px;
+                }
+                .switch-points .switch-to {
+                  min-width: 50%;
+                }
+                /* "Active" Point */
+                .switch-points .switch-to.active button {
+                  border: 2px solid #e67e22;
+                }
+                /* All Points */
+                .switch-points .switch-to button {
+                  padding: 12px 14px;
+                  background: #f7f6f6;
+                  border: 2px solid #e67d2223;
+
+                  border-radius: 8px;
+                  text-align: left;
+                  white-space: nowrap;
+                  text-overflow: ellipsis;
+                  overflow: hidden;
+                  width: 100%;
+                }
+                @media only screen and (max-width: 768px) {
+                  .switch-points.d-md-flex {
+                    display: -webkit-box;
+                    display: -ms-flexbox;
+                    display: flex;
+                  }
+                }
+
+                /* >>> Preventing Data Loss Points <<< */
+                /* Heading Area */
+                .preventing-data-loss-heading-area.d-md-block {
+                  display: none;
+                  text-align: left;
+                }
+                /* Data Loss Point */
                 .preventing-data-loss-point {
                   padding: 15px 30px 15px 30px;
                 }
@@ -6190,15 +6247,76 @@
                   color: #798da3;
                   margin: 0 !important;
                 }
+                /* "Active" Data Loss Point */
                 .preventing-data-loss-point.active {
                   padding: 30px;
+                  margin: 20px 0px;
                   border-left: 6px solid #e67e22;
                   background: #f7f6f6;
+                }
+                .preventing-data-loss-point:last-of-type {
+                  margin-bottom: 0;
+                }
+                .preventing-data-loss-point:first-of-type {
+                  margin-top: 0;
                 }
                 .preventing-data-loss-point.active p {
                   display: block;
                 }
+                /* Changing Functionality styles */
+                @media only screen and (max-width: 768px) {
+                  .preventing-data-loss-heading-area.d-md-block {
+                    display: block;
+                  }
+                  .preventing-data-loss-heading-area.d-lg-block {
+                    display: none;
+                  }
+                  .preventing-data-loss-point,
+                  .preventing-data-loss-point.active {
+                    padding: 0;
+                    margin: 0;
+                  }
+                  .preventing-data-loss-point h3,
+                  .preventing-data-loss-point p {
+                    display: none;
+                    cursor: text;
+                  }
+                  .preventing-data-loss-point.active h3,
+                  .preventing-data-loss-point.active p {
+                    display: block;
+                  }
+                  .preventing-data-loss-point.active {
+                    border: none;
+                    background: transparent;
+                  }
+                }
               </style>
+              <div class="switch-points d-md-flex">
+                <div class="switch-to point-1 active">
+                  <button target="point-1">Block File Transfers</button>
+                </div>
+                <div class="switch-to point-2">
+                  <button target="point-2">Application Access Restrictions</button>
+                </div>
+              </div>
+              <div class="switch-points d-md-flex">
+                <div class="switch-to point-3">
+                  <button target="point-3">Block Device Connections</button>
+                </div>
+                <div class="switch-to point-4">
+                  <button target="point-4">Detect Malware</button>
+                </div>
+              </div>
+              <img class="preventing-data-loss-image" src="./assets/img/file-transfer.png" alt="file-transfer" />
+            </div>
+            <div class="col col-2">
+              <div class="preventing-data-loss-heading-area d-lg-block">
+                <p>Prevent Data Loss</p>
+                <h2>Stop your company IPR from leaving your network</h2>
+                <p class="txt-medium">
+                  Source code theft is an unspoken problem that is plaguing the software development industry. KnowIT offers powerful tools to stop data loss across every endpoint
+                </p>
+              </div>
               <div class="preventing-data-loss-points">
                 <div class="preventing-data-loss-point point-1 active" data-src="file-transfer.png">
                   <h3>Block File Transfers</h3>
@@ -6220,7 +6338,7 @@
               <!-- >>> JQUERY <<< -->
               <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
               <script>
-                /* Controls Use cases controls */
+                /* Data Loss Points */
                 $(document).ready(function () {
                   $(".preventing-data-loss-point").on("click", "h3", function () {
                     /* Switching Classes */
@@ -6229,7 +6347,22 @@
                     /* Getting src, alt based on the active point and assigning to img */
                     src = $(this).parent(".preventing-data-loss-point").attr("data-src");
                     alt = $(this).text();
-                    $(".preventing-data-loss-image").replaceWith('<img class="preventing-data-loss-image" src="./assets/img/' + src + '"  alt="./assets/img/' + alt + '" />');
+                    $(".preventing-data-loss-image").replaceWith('<img class="preventing-data-loss-image" src="./assets/img/' + src + '"  alt="' + alt + '" />');
+                  });
+
+                  /* Data Loss Points Switch Controls  */
+                  $(".switch-points").on("click", "button", function () {
+                    /* Switching Classes for Switch Controls */
+                    $(".switch-points .switch-to.active").removeClass("active");
+                    $(this).parent(".switch-to").addClass("active");
+                    /* Switching Classes for Data Loss Points */
+                    $(".preventing-data-loss-point.active").removeClass("active");
+                    target = $(this).attr("target");
+                    $(".preventing-data-loss-point." + target).addClass("active");
+                    /* Getting src/alt of target Data Loss point and changing image based on that */
+                    src = $(".preventing-data-loss-point." + target).attr("data-src");
+                    alt = $(".preventing-data-loss-point." + target).text();
+                    $(".preventing-data-loss-image").replaceWith('<img class="preventing-data-loss-image" src="./assets/img/' + src + '"  alt="' + alt + '" />');
                   });
                 });
               </script>
