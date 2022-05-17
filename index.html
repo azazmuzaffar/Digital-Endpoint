@@ -6097,79 +6097,81 @@
             </div>
           </div>
         </div>
-        <div class="wrapper-inner txt-left sc-sty1 padding-left-3rem">
-          <div class="row icn-wrap">
-            <div class="col col-3 column">
-              <div class="single-icn-wrap image">
-                <img loading="lazy" class="lazy-load dlp-icn" alt="install KnowIT" data-src="/common/images/page/data-loss-prevent/icn/desktop-file-transfer-report.png" />
-                <div class="dlp-over-icn overlay">
-                  <img
-                    loading="lazy"
-                    class="lazy-load over-dlp-icn full-opacity"
-                    alt="install KnowIT"
-                    onclick="openModal();currentSlide(1)"
-                    data-src="/common/images/page/data-loss-prevent/icn/eye.png"
-                  />
-                </div>
+      </section>
+
+      <!-- ** New Resources required ** -->
+      <!-- ____________________________ -->
+
+      <link rel="stylesheet" href="./assets/scss/app.css" />
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+      <script src="./assets/js/app.js"></script>
+
+      <!-- ******** Section # 1 ******* -->
+      <!-- ____________________________ -->
+
+      <section id="detect-data-loss">
+        <div class="detect-data-loss wrapper-inner set-space padding-left-3rem">
+          <!-- Detect Data Loss All Points -->
+          <div class="detect-data-loss-points">
+            <!-- Detect Data Loss Point # 1 -->
+            <div class="detect-data-loss-point" id="point-1" data-src="file-transfer.png">
+              <div class="txt-medium detect-data-loss-text-content">
+                <h3>Track File Transfers</h3>
+                <p class="sc-sty1-p">See a history of all file movements across your network. Includes USB, Web, IM, and Cloud Transfers</p>
               </div>
-              <h3>Track File Transfers</h3>
-              <p class="sc-sty1-p">See a history of all file movements across your network. Includes USB, Web, IM, and Cloud Transfers</p>
+              <img src="./assets/img/file-transfer.png" alt="Track File Transfers" loading="lazy" />
             </div>
-            <div class="col col-3 column" id="target">
-              <div class="single-icn-wrap image">
-                <img loading="lazy" class="lazy-load dlp-icn" alt="activate KnowIT" data-src="/common/images/page/data-loss-prevent/icn/edit_file.png" />
-                <div class="dlp-over-icn overlay">
-                  <img
-                    loading="lazy"
-                    class="lazy-load over-dlp-icn full-opacity"
-                    alt="install KnowIT"
-                    onclick="openModal();currentSlide(2)"
-                    data-src="/common/images/page/data-loss-prevent/icn/eye.png"
-                  />
-                </div>
+            <!-- Detect Data Loss Point # 2 -->
+            <div class="detect-data-loss-point" id="point-2" data-src="file-activity.png">
+              <div class="txt-medium detect-data-loss-text-content">
+                <h3>Track File Modifications</h3>
+                <p class="sc-sty1-p">Know when important files are modified or deleted. Includes renames, merges, creation, and deletion</p>
               </div>
-              <h3>Track File Modifications</h3>
-              <p class="sc-sty1-p">Know when important files are modified or deleted. Includes renames, merges, creation, and deletion</p>
+              <img src="./assets/img/file-transfer.png" alt="Track File Transfers" loading="lazy" />
             </div>
-            <div class="col col-3 column">
-              <div class="single-icn-wrap image">
-                <img loading="lazy" class="lazy-load dlp-icn" alt="analyse KnowIT" data-src="/common/images/page/data-loss-prevent/icn/printjob.png" />
-                <div class="dlp-over-icn overlay">
-                  <img
-                    loading="lazy"
-                    class="lazy-load over-dlp-icn full-opacity"
-                    alt="install KnowIT"
-                    onclick="openModal();currentSlide(3)"
-                    data-src="/common/images/page/data-loss-prevent/icn/eye.png"
-                  />
-                </div>
+            <!-- Detect Data Loss Point # 3 -->
+            <div class="detect-data-loss-point" id="point-3" data-src="block-device-connection.png">
+              <div class="txt-medium detect-data-loss-text-content">
+                <h3>Track Print Jobs</h3>
+                <p class="sc-sty1-p">See whether employees are printing ...</p>
               </div>
-              <h3>Track Print Jobs</h3>
-              <p class="sc-sty1-p">See whether employees are printing ...</p>
+              <img src="./assets/img/file-transfer.png" alt="Track File Transfers" loading="lazy" />
             </div>
-            <div class="col col-3 column">
-              <div class="single-icn-wrap image">
-                <img loading="lazy" class="lazy-load dlp-icn" alt="analyse KnowIT" data-src="/common/images/page/data-loss-prevent/icn/peripheral.png" />
-                <div class="dlp-over-icn overlay">
-                  <img
-                    loading="lazy"
-                    class="lazy-load over-dlp-icn full-opacity"
-                    alt="install KnowIT"
-                    onclick="openModal();currentSlide(4)"
-                    data-src="/common/images/page/data-loss-prevent/icn/eye.png"
-                  />
-                </div>
+            <!-- Detect Data Loss Point # 4 -->
+            <div class="detect-data-loss-point" id="point-4" data-src="periphrial-connections.png">
+              <div class="txt-medium detect-data-loss-text-content">
+                <h3>Track Device Connections</h3>
+                <p class="sc-sty1-p">See a list of all peripheral devices that have connected to the computer</p>
               </div>
-              <h3>Track Device Connections</h3>
-              <p class="sc-sty1-p">See a list of all peripheral devices that have connected to the computer</p>
+              <img src="./assets/img/file-transfer.png" alt="Track File Transfers" loading="lazy" />
+            </div>
+          </div>
+          <!-- Detect Data Loss Video/Image -->
+          <div class="detect-data-loss-video">
+            <div class="detect-data-loss-view">
+              <img src="./assets/img/file-transfer.png" alt="File Transfer" loading="lazy" />
             </div>
           </div>
         </div>
+        <!-- Dots (Active Section) -->
+        <div class="dots">
+          <ul>
+            <li id="dot-1"></li>
+            <li id="dot-2"></li>
+            <li id="dot-3"></li>
+            <li id="dot-4"></li>
+          </ul>
+        </div>
       </section>
-      <section class="make-different get-insight">
+
+      <!-- ******** Section # 2 ******* -->
+      <!-- ____________________________ -->
+
+      <section id="make-different" class="make-different get-insight">
         <div class="wrapper-inner make-different-inner txt-center">
           <div class="row txt-left">
             <div class="col col-2 flexcol pull-sm-left txt-center video-769 video-left">
+              <!-- Heading Area / Mobile only -->
               <div class="preventing-data-loss-heading-area d-md-block">
                 <p>Prevent Data Loss</p>
                 <h2>Stop your company IPR from leaving your network</h2>
@@ -6177,139 +6179,32 @@
                   Source code theft is an unspoken problem that is plaguing the software development industry. KnowIT offers powerful tools to stop data loss across every endpoint
                 </p>
               </div>
-              <style>
-                /* >>> Switching Data Loss Points <<< */
-                /* >>> Visible on Mobile only <<< */
-                .switch-points {
-                  display: -webkit-box;
-                  display: -ms-flexbox;
-                  display: flex;
-                  -webkit-box-align: center;
-                  -ms-flex-align: center;
-                  align-items: center;
-                  margin-bottom: 14px;
-                }
-                .switch-points .switch-to:first-of-type {
-                  padding-right: 6px;
-                }
-                .switch-points .switch-to:last-of-type {
-                  padding-left: 6px;
-                }
-                .switch-points.d-md-flex {
-                  display: none;
-                }
-                .switch-points:last-of-type {
-                  margin-bottom: 35px;
-                }
-                .switch-points .switch-to {
-                  min-width: 50%;
-                }
-                /* "Active" Point */
-                .switch-points .switch-to.active button {
-                  border: 2px solid #e67e22;
-                }
-                /* All Points */
-                .switch-points .switch-to button {
-                  padding: 12px 14px;
-                  background: #f7f6f6;
-                  border: 2px solid #e67d2223;
-
-                  border-radius: 8px;
-                  text-align: left;
-                  white-space: nowrap;
-                  text-overflow: ellipsis;
-                  overflow: hidden;
-                  width: 100%;
-                }
-                @media only screen and (max-width: 768px) {
-                  .switch-points.d-md-flex {
-                    display: -webkit-box;
-                    display: -ms-flexbox;
-                    display: flex;
-                  }
-                }
-
-                /* >>> Preventing Data Loss Points <<< */
-                /* Heading Area */
-                .preventing-data-loss-heading-area.d-md-block {
-                  display: none;
-                  text-align: left;
-                }
-                /* Data Loss Point */
-                .preventing-data-loss-point {
-                  padding: 15px 30px 15px 30px;
-                }
-                .preventing-data-loss-point h3 {
-                  cursor: pointer;
-                }
-                .preventing-data-loss-point p {
-                  display: none;
-                  color: #798da3;
-                  margin: 0 !important;
-                }
-                /* "Active" Data Loss Point */
-                .preventing-data-loss-point.active {
-                  padding: 30px;
-                  margin: 20px 0px;
-                  border-left: 6px solid #e67e22;
-                  background: #f7f6f6;
-                }
-                .preventing-data-loss-point:last-of-type {
-                  margin-bottom: 0;
-                }
-                .preventing-data-loss-point:first-of-type {
-                  margin-top: 0;
-                }
-                .preventing-data-loss-point.active p {
-                  display: block;
-                }
-                /* Changing Functionality styles */
-                @media only screen and (max-width: 768px) {
-                  .preventing-data-loss-heading-area.d-md-block {
-                    display: block;
-                  }
-                  .preventing-data-loss-heading-area.d-lg-block {
-                    display: none;
-                  }
-                  .preventing-data-loss-point,
-                  .preventing-data-loss-point.active {
-                    padding: 0;
-                    margin: 0;
-                  }
-                  .preventing-data-loss-point h3,
-                  .preventing-data-loss-point p {
-                    display: none;
-                    cursor: text;
-                  }
-                  .preventing-data-loss-point.active h3,
-                  .preventing-data-loss-point.active p {
-                    display: block;
-                  }
-                  .preventing-data-loss-point.active {
-                    border: none;
-                    background: transparent;
-                  }
-                }
-              </style>
+              <!-- Switch Prevent Data Loss Points / Mobile only -->
               <div class="switch-points d-md-flex">
+                <!-- Switch to Point # 1 -->
                 <div class="switch-to point-1 active">
                   <button target="point-1">Block File Transfers</button>
                 </div>
+                <!-- Switch to Point # 2 -->
                 <div class="switch-to point-2">
                   <button target="point-2">Application Access Restrictions</button>
                 </div>
               </div>
               <div class="switch-points d-md-flex">
+                <!-- Switch to Point # 3 -->
                 <div class="switch-to point-3">
                   <button target="point-3">Block Device Connections</button>
                 </div>
+                <!-- Switch to Point # 4 -->
                 <div class="switch-to point-4">
                   <button target="point-4">Detect Malware</button>
                 </div>
               </div>
+              <!-- Switch Image based on points -->
               <img class="preventing-data-loss-image" src="./assets/img/file-transfer.png" alt="file-transfer" />
             </div>
             <div class="col col-2">
+              <!-- Heading Area / Desktop only -->
               <div class="preventing-data-loss-heading-area d-lg-block">
                 <p>Prevent Data Loss</p>
                 <h2>Stop your company IPR from leaving your network</h2>
@@ -6317,59 +6212,34 @@
                   Source code theft is an unspoken problem that is plaguing the software development industry. KnowIT offers powerful tools to stop data loss across every endpoint
                 </p>
               </div>
+              <!-- All Preventing Data Loss Points -->
               <div class="preventing-data-loss-points">
+                <!-- Preventing Data Loss Point # 1 -->
                 <div class="preventing-data-loss-point point-1 active" data-src="file-transfer.png">
                   <h3>Block File Transfers</h3>
                   <p>Stop employees from transferring data to USB, the Cloud, or Network Storage</p>
                 </div>
+                <!-- Preventing Data Loss Point # 2 -->
                 <div class="preventing-data-loss-point point-2" data-src="file-activity.png">
                   <h3>Application Access Restrictions</h3>
                   <p>Block specific apps from accessing specified file types. For example, ....</p>
                 </div>
+                <!-- Preventing Data Loss Point # 3 -->
                 <div class="preventing-data-loss-point point-3" data-src="block-device-connection.png">
                   <h3>Block Device Connections</h3>
                   <p>Our peripheral management feature lets you Restrict Certain Devices from Connecting to Computer</p>
                 </div>
+                <!-- Preventing Data Loss Point # 4 -->
                 <div class="preventing-data-loss-point point-4" data-src="periphrial-connections.png">
                   <h3>Detect Malware</h3>
                   <p>Unlike other products, KnowIT also inspects network packets allowing detection of suspicious port activity, spam bots, DDOS zombies, and other hidden malware</p>
                 </div>
               </div>
-              <!-- >>> JQUERY <<< -->
-              <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-              <script>
-                /* Data Loss Points */
-                $(document).ready(function () {
-                  $(".preventing-data-loss-point").on("click", "h3", function () {
-                    /* Switching Classes */
-                    $(".preventing-data-loss-point.active").removeClass("active");
-                    $(this).parent(".preventing-data-loss-point").addClass("active");
-                    /* Getting src, alt based on the active point and assigning to img */
-                    src = $(this).parent(".preventing-data-loss-point").attr("data-src");
-                    alt = $(this).text();
-                    $(".preventing-data-loss-image").replaceWith('<img class="preventing-data-loss-image" src="./assets/img/' + src + '"  alt="' + alt + '" />');
-                  });
-
-                  /* Data Loss Points Switch Controls  */
-                  $(".switch-points").on("click", "button", function () {
-                    /* Switching Classes for Switch Controls */
-                    $(".switch-points .switch-to.active").removeClass("active");
-                    $(this).parent(".switch-to").addClass("active");
-                    /* Switching Classes for Data Loss Points */
-                    $(".preventing-data-loss-point.active").removeClass("active");
-                    target = $(this).attr("target");
-                    $(".preventing-data-loss-point." + target).addClass("active");
-                    /* Getting src/alt of target Data Loss point and changing image based on that */
-                    src = $(".preventing-data-loss-point." + target).attr("data-src");
-                    alt = $(".preventing-data-loss-point." + target).text();
-                    $(".preventing-data-loss-image").replaceWith('<img class="preventing-data-loss-image" src="./assets/img/' + src + '"  alt="' + alt + '" />');
-                  });
-                });
-              </script>
             </div>
           </div>
         </div>
       </section>
+
       <section class="what-knowit sc-sty1 how-it-works">
         <div class="what-knowit-inner wrapper-inner txt-center w-max-875">
           <div class="txt-center">

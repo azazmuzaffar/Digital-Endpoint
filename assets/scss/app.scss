@@ -1,0 +1,285 @@
+/*---------------------------------------
+    Section # 1: Detect Data Loss
+-----------------------------------------*/
+
+#detect-data-loss {
+  position: relative;
+  background: #f5f7f8;
+  .detect-data-loss {
+    display: flex;
+    align-items: flex-start;
+    /* Points */
+    .detect-data-loss-point {
+      height: calc(100vh);
+      display: flex;
+      align-items: center;
+      .detect-data-loss-text-content {
+        padding-right: 20%;
+        p {
+          margin: 0 !important;
+        }
+      }
+      img {
+        display: none;
+      }
+    }
+    .detect-data-loss-points,
+    .detect-data-loss-video {
+      min-width: 50%;
+    }
+    /* Video/Image */
+    .detect-data-loss-video {
+      .detect-data-loss-view {
+        position: relative;
+        max-width: 635px;
+        bottom: 0;
+        height: 100vh;
+        img {
+          position: relative;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+      }
+    }
+    @media only screen and (max-width: 1440px) {
+      .detect-data-loss-point {
+        .detect-data-loss-text-content {
+          padding-left: 5%;
+        }
+      }
+    }
+    @media only screen and (max-width: 1366px) {
+      .detect-data-loss-point {
+        .detect-data-loss-text-content {
+          padding-left: 10%;
+          padding-right: 8%;
+        }
+      }
+    }
+  }
+  /* Dots */
+  .dots {
+    position: absolute;
+    height: 100vh;
+    pointer-events: none;
+    top: 0;
+    left: 10%;
+    background: transparent;
+    ul {
+      position: relative;
+      width: fit-content;
+      top: 50%;
+      left: 10%;
+      transform: translateY(-50%);
+      li {
+        display: block;
+        width: 12px;
+        height: 12px;
+        background: rgb(207, 207, 207);
+        margin-bottom: 30px;
+        border-radius: 50%;
+        transition: 0.5s;
+        &.active {
+          background: #000;
+          transition: 0.5s;
+        }
+        &:last-of-type {
+          margin-bottom: 0px;
+        }
+      }
+    }
+    @media only screen and (max-width: 1800px) {
+      left: 40px;
+    }
+    @media only screen and (max-width: 992px) {
+      left: 20px;
+    }
+  }
+  /* Fixed */
+  &.fixed {
+    .detect-data-loss {
+      .detect-data-loss-video {
+        .detect-data-loss-view {
+          position: fixed;
+          z-index: 9;
+          top: 0;
+          @media only screen and (max-width: 1300px) {
+            img {
+              width: calc(100% - 50px);
+            }
+          }
+        }
+      }
+    }
+    .dots {
+      position: fixed;
+    }
+  }
+  /* Absolute */
+  &.absolute {
+    .detect-data-loss {
+      position: relative;
+      .detect-data-loss-video {
+        .detect-data-loss-view {
+          position: absolute;
+          @media only screen and (max-width: 1300px) {
+            img {
+              width: calc(100% - 50px);
+            }
+          }
+        }
+      }
+    }
+    .dots {
+      position: absolute;
+      top: unset;
+      bottom: 0;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .detect-data-loss {
+    display: block;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    /* Points */
+    .detect-data-loss-point {
+      height: fit-content !important;
+      display: block !important;
+      margin-bottom: 30px;
+      .detect-data-loss-text-content {
+        margin-bottom: 20px;
+        padding: 0 !important;
+      }
+      img {
+        display: block !important;
+      }
+    }
+    .detect-data-loss-points,
+    .detect-data-loss-video {
+      min-width: 100%;
+    }
+    .detect-data-loss-video {
+      display: none;
+    }
+  }
+  .dots {
+    display: none;
+  }
+}
+
+/*---------------------------------------
+    Section # 2: Prevent Data Loss
+-----------------------------------------*/
+
+/* Preventing Data Loss Points */
+.preventing-data-loss-heading-area {
+  &.d-md-block {
+    display: none;
+    text-align: left;
+  }
+}
+
+/* Data Loss Point */
+.preventing-data-loss-point {
+  padding: 15px 30px 15px 30px;
+  h3 {
+    cursor: pointer;
+  }
+  p {
+    display: none;
+    color: #798da3;
+    margin: 0 !important;
+  }
+  &.active {
+    padding: 30px;
+    margin: 20px 0px;
+    border-left: 6px solid #e67e22;
+    background: #f7f6f6;
+    p {
+      display: block;
+    }
+  }
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+  &:first-of-type {
+    margin-top: 0;
+  }
+}
+
+/* Changing Functionality styles */
+@media only screen and (max-width: 768px) {
+  .preventing-data-loss-heading-area {
+    &.d-md-block {
+      display: block;
+    }
+    &.d-lg-block {
+      display: none;
+    }
+  }
+  .preventing-data-loss-point,
+  .preventing-data-loss-point.active {
+    padding: 0;
+    margin: 0;
+  }
+  .preventing-data-loss-point {
+    h3,
+    p {
+      display: none;
+    }
+    &.active {
+      border: none;
+      background: transparent;
+      h3,
+      p {
+        display: block;
+      }
+    }
+  }
+}
+
+/* Switch Points Controls */
+.switch-points {
+  display: flex;
+  align-items: center;
+  margin-bottom: 14px;
+  &.d-md-flex {
+    display: none;
+  }
+  &:last-of-type {
+    margin-bottom: 35px;
+  }
+  .switch-to {
+    min-width: 50%;
+    button {
+      padding: 12px 14px;
+      background: #f7f6f6;
+      border: 2px solid #e67d2211;
+      border-radius: 8px;
+      text-align: left;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      width: 100%;
+    }
+    &.active {
+      button {
+        border: 2px solid #e67e22;
+      }
+    }
+    &:first-of-type {
+      padding-right: 6px;
+    }
+    &:last-of-type {
+      padding-left: 6px;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .switch-points.d-md-flex {
+    display: flex;
+  }
+}
