@@ -59,25 +59,25 @@ $(document).ready(function () {
       dot_1.siblings().removeClass("active");
       dot_1.addClass("active");
       imageSrc = $("#point-1").attr("data-src");
-      $(".detect-data-loss-view img").attr("src", "./assets/img/" + imageSrc);
+      $(".detect-data-loss-view img").replaceWith('<img src="./assets/img/' + imageSrc + '" />');
     }
     if (scrollPosition >= point_2) {
       dot_2.siblings().removeClass("active");
       dot_2.addClass("active");
       imageSrc = $("#point-2").attr("data-src");
-      $(".detect-data-loss-view img").attr("src", "./assets/img/" + imageSrc);
+      $(".detect-data-loss-view img").replaceWith('<img src="./assets/img/' + imageSrc + '" />');
     }
     if (scrollPosition >= point_3) {
       dot_3.siblings().removeClass("active");
       dot_3.addClass("active");
       imageSrc = $("#point-3").attr("data-src");
-      $(".detect-data-loss-view img").attr("src", "./assets/img/" + imageSrc);
+      $(".detect-data-loss-view img").replaceWith('<img src="./assets/img/' + imageSrc + '" />');
     }
     if (scrollPosition >= point_4) {
       dot_4.siblings().removeClass("active");
       dot_4.addClass("active");
       imageSrc = $("#point-4").attr("data-src");
-      $(".detect-data-loss-view img").attr("src", "./assets/img/" + imageSrc);
+      $(".detect-data-loss-view img").replaceWith('<img src="./assets/img/' + imageSrc + '" />');
     }
   });
 });
