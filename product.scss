@@ -1,0 +1,301 @@
+/*--------------------------------------
+  PRODUCT SECTION -> Editions
+----------------------------------------*/
+
+.product-section {
+  max-width: 1120px;
+  padding: 5.4rem 3rem 5rem 3rem;
+  margin: 0 auto;
+  .tcenter {
+    text-align: center;
+  }
+  &.-v2 {
+    max-width: 1296px;
+  }
+  @media screen and (max-width: 768px) {
+    padding: 3rem 1rem;
+  }
+}
+.product-introduction {
+  /*  h2 {
+    text-align: center;
+    font-size: 2em;
+    font-weight: 600;
+  } */
+  .under-heading {
+    background: #ddd;
+    height: 1px;
+    max-width: 320px;
+    display: block;
+    margin: 1em auto 2.5em;
+  }
+  .optional-intro {
+    margin-bottom: 40px;
+    h3 {
+      margin-bottom: 1.2rem;
+    }
+  }
+  @media screen and (max-width: 1200px) {
+    h2 {
+      br {
+        display: none;
+      }
+    }
+  }
+}
+.product-editions {
+  margin-top: 3rem;
+  .product-edition {
+    border: 1px solid #d3d3d3;
+    margin-bottom: 2rem;
+    padding: 3rem 2.5rem 3rem 2.5rem;
+    @media screen and (max-width: 768px) {
+      padding: 1.7rem 1.5rem 1.7rem 1.5rem;
+      margin-bottom: 1.3rem;
+    }
+    &:last-of-type {
+      margin-bottom: 0px;
+    }
+    h3 {
+      margin-bottom: 0.6rem;
+    }
+    .per-month {
+      font-size: 1.5rem;
+      font-weight: 400;
+      margin-bottom: 0.6rem;
+      @media screen and (max-width: 768px) {
+        font-size: 1.2rem;
+      }
+    }
+    .text-under-hero-btn {
+      width: fit-content;
+      margin: 0 auto;
+      margin-top: 1em;
+      margin-bottom: 1.9em;
+      font-size: 19px;
+      display: flex;
+      align-items: center;
+      span {
+        margin-right: 14px;
+      }
+      img {
+        margin-right: 13px;
+        &:last-of-type {
+          margin-right: 0px;
+        }
+        &.work-on {
+          &.window {
+            width: 23px;
+          }
+          &.macos {
+            width: 28px;
+          }
+          &.windass {
+            width: 39px;
+          }
+          &.anderoid {
+            width: 35px;
+          }
+          &.apple {
+            width: 21px;
+          }
+        }
+      }
+    }
+    @media screen and (max-width: 600px) {
+      .text-under-hero-btn {
+        margin: 0 auto;
+        margin-top: 0.8em;
+        margin-bottom: 1.2em;
+        span {
+          margin-right: 10px;
+          display: none;
+        }
+        img {
+          margin-right: 12px;
+        }
+      }
+    }
+    .edition-details {
+      margin: 2rem 0;
+      @media screen and (max-width: 768px) {
+        margin: 1.5rem 0;
+      }
+      &.mb-0 {
+        margin-bottom: 0px;
+      }
+      h4 {
+        margin-bottom: 1.5rem;
+      }
+      .edition-properties {
+        display: flex;
+        align-items: flex-start;
+        ul {
+          width: 50%;
+          max-width: 50%;
+          margin-left: 4rem;
+          li {
+            &::before {
+              content: "";
+              height: 1.3rem;
+              width: 1.3rem;
+              display: block;
+              float: left;
+              margin-top: 0.23rem;
+              margin-left: -2rem;
+              background-position: center;
+              background-repeat: no-repeat;
+              background-size: 100%;
+              background: url("./assets/img/complete-icon.svg");
+              background-size: cover;
+              border: none;
+            }
+          }
+          &.f-width {
+            width: 100%;
+            max-width: 100%;
+          }
+        }
+        @media screen and (max-width: 768px) {
+          flex-wrap: wrap;
+          width: 100%;
+          ul {
+            width: 100%;
+            max-width: 100%;
+            margin-left: 3rem;
+            li {
+              margin-bottom: 0.2rem;
+              &::before {
+                margin-top: 0rem;
+              }
+            }
+          }
+        }
+      }
+    }
+    .learn-more {
+      display: block;
+      text-decoration: none;
+      max-width: 450px;
+      &.d-center {
+        margin: 0 auto;
+      }
+      &.d-right {
+        margin-left: auto;
+        margin-right: 0;
+      }
+      margin-top: 2.5rem !important;
+      span {
+        display: block;
+        max-width: 100%;
+        border: 2px solid #000;
+        text-align: center;
+        background: transparent;
+        color: #000;
+      }
+      @media screen and (max-width: 768px) {
+        margin-top: 2rem !important;
+      }
+    }
+  }
+  .grid-editions {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+    &:first-of-type {
+      margin-bottom: 2rem;
+    }
+    .product-edition {
+      width: 50%;
+      position: relative;
+      min-height: 1099px;
+      margin-bottom: 0px;
+      .edition-properties {
+        display: block;
+        ul {
+          width: calc(100% - 4rem);
+          max-width: calc(100% - 4rem);
+        }
+      }
+      .learn-more {
+        position: absolute;
+        bottom: 2.5rem;
+        width: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        @media screen and (min-width: 1201px) {
+          width: 100%;
+          max-width: calc(100% - 5rem);
+        }
+      }
+    }
+    @media screen and (max-width: 1200px) {
+      display: block;
+      width: 100%;
+      &:first-of-type {
+        margin-bottom: 0rem;
+      }
+      .product-edition {
+        min-height: fit-content;
+        margin-bottom: 2rem;
+        width: 100%;
+        .learn-more {
+          position: relative;
+          bottom: unset;
+          left: unset;
+          transform: translateX(0);
+        }
+        @media screen and (max-width: 768px) {
+          padding: 1.7rem 1.5rem 1.7rem 1.5rem;
+          margin-bottom: 1.3rem;
+        }
+      }
+    }
+  }
+}
+
+/*--------------------------------------
+  PRODUCT SECTION -> Clouds
+----------------------------------------*/
+
+.product-pv {
+  .product-pv-details {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 0 auto;
+    margin-bottom: 1.3rem;
+    max-width: 1024px;
+    ul {
+      margin-left: 4rem;
+      width: 50%;
+      li {
+        &::before {
+          content: "";
+          height: 1.3rem;
+          width: 1.3rem;
+          display: block;
+          float: left;
+          margin-top: 0.23rem;
+          margin-left: -2rem;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: 100%;
+          background: url("./assets/img/check-white.svg");
+          background-size: cover;
+          border: none;
+        }
+      }
+      &.f-width {
+        width: 100%;
+        max-width: 100%;
+      }
+    }
+    @media screen and (max-width: 768px) {
+      flex-wrap: wrap;
+      ul {
+        width: 100%;
+      }
+    }
+  }
+}

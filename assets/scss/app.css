@@ -218,6 +218,7 @@
   display: none;
   color: #798da3;
   margin: 0 !important;
+  padding: 0 40px 0px 0px;
 }
 
 .preventing-data-loss-point.active {
